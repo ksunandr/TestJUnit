@@ -8,10 +8,14 @@ public class Culc {
 
     public BigInteger plus(BigInteger... args) {
 
+        if (args == null) {
+            return resalt;
+        }
 
         for (BigInteger arg : args) {
             resalt = resalt.add(arg);
         }
+
         return resalt;
     }
 }
